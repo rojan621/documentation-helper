@@ -18,10 +18,20 @@ jinja2 = "*"
 uvicorn = "*"
 streamlit = "*"
 streamlit-chat = "*"
-ollama = "*"
-chromadb = "*"
+tqdm = "*"
+isort = "*"
+langchainhub = "*"
+firecrawl-py = "*"
+langchain-community = "*"
+langsmith = "*"
+pillow = "*"
+certifi = "*"
+langchain-chroma = "*"
+python-dotenv = "*"
+langchain-tavily = "*"
+langchain-pinecone = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.14"
+python_version = "3.11"
