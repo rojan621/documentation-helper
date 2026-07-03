@@ -23,7 +23,7 @@ os.environ["SSL_CERT_FILE"] = certifi.where()
 os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
 embeddings = OllamaEmbeddings(
-    model="qwen2.5:7b"
+    model="nomic-embed-text"
 )
 
 vectorstore = Chroma(persist_directory="chroma_db", embedding_function=embeddings)
