@@ -24,7 +24,7 @@ model = init_chat_model("qwen2.5:7b", model_provider="ollama")
 
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str):
-    """Retrieve relevant documentation to help answer user queries about LnagChain."""
+    """Retrieve relevant documentation to help answer user queries about LangChain."""
     # Retrieve top 4 most similar documents
     retrieved_docs = vectorstore.as_retriever().invoke(query, k=4)
 
